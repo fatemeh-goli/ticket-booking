@@ -108,7 +108,7 @@ input:focus {
     transition: background-color 0.2s ease;
 }
 
-#ticket_booking:hover {
+#ticket-booking:hover {
     background-color: #0E6F8F;
     border-color: #0E6F8F;
 }
@@ -148,7 +148,7 @@ input:focus {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-    .ticket_booking_form {
+    .ticket-booking-form {
         width: 85%;
         min-height: auto;
         padding: 20px;
@@ -158,7 +158,7 @@ input:focus {
         font-size: 18px;
     }
 
-    .ticket_booking_title {
+    .ticket-booking-title {
         font-size: 26px;
     }
 
@@ -173,13 +173,13 @@ input:focus {
         align-items: flex-start;
     }
 
-    .ticket_booking_form {
+    .ticket-booking-form {
         width: calc(100% - 30px);
         min-height: auto;
         padding: 18px;
     }
 
-    .ticket_booking_title {
+    .ticket-booking-title {
         font-size: 23px;
         margin-bottom: 20px;
     }
@@ -196,7 +196,7 @@ input:focus {
         margin-bottom: 20px;
     }
 
-    #ticket_booking {
+    #ticket-booking {
         font-size: 17px;
         margin-top: 25px;
     }
