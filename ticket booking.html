@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ticket booking.css">
+    <title>ticket booking</title>
+</head>
+
+<body>
+
+    <form class="ticket-booking-form">
+        <h1 class="ticket-booking-title">
+            <img src="/images/airplane.svg" alt="airplane" class="image-airplane">
+            Ticket Booking
+        </h1>
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" placeholder="First name">
+        <p class="error-message" id="first-name-error">Lorem, ipsum dolor.</p>
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" placeholder="Last name">
+        <p class="error-message" id="last-name-error"></p>
+        <label for="phone-number">Phone number:</label>
+        <input type="tel" id="phone-number" placeholder="Phone number">
+        <p class="error-message" id="phone-number-error"></p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="example@gmail.com">
+        <p class="error-message" id="email-error"></p>
+        <select name="country" id="select-country">
+            <option value="Iran">Iran</option>
+            <option value="Canada">Canada</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Russia">Russia</option>
+        </select>
+        <select name="city" id="select-city">
+        </select>
+
+        <button type="button" id="ticket-booking">Ticket Booking</button>
+    </form>
+
+    <div id="message-success">
+        <h2 class="message-success-title">Successful booking</h2>
+        <p class="message-success-description">Your ticket has been booked successfully. Have a wonderful trip!</p>
+       <button id="close-message-success">close</button>
+    </div>
+
+    <script src="/ticket booking.js"></script>
+</body>
+
+</html>

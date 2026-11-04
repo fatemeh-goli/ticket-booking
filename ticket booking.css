@@ -1,0 +1,220 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/images/travel-background.png');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.ticket-booking-form {
+    background-color: #E6F1F8;
+    padding: 20px;
+    width: 500px;
+    max-width: calc(100% - 30px);
+    min-height: 700px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D6E5EF;
+}
+
+.ticket-booking-title {
+    color: #18364F;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.image-airplane {
+    width: 30px;
+}
+
+label {
+    color: #18364F;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+input {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    background-color: #F9FBFE;
+    color: #18364F;
+    border: 1px solid #D6E5EF;
+}
+
+input:hover {
+    border-color: #64A9D7;
+}
+
+input:focus {
+    outline: 2px solid #64A9D7;
+    outline-offset: 1px;
+}
+
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    display: none;
+}
+
+#select-country {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#select-country,
+#select-city {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    color: #18364F;
+    background-color: #F9FBFE;
+    border: 1px solid #D6E5EF;
+    padding: 0 8px;
+}
+
+#select-country:focus,
+#select-city:focus {
+    outline: 2px solid #64A9D7;
+    outline-offset: 1px;
+}
+
+#ticket-booking {
+    width: 100%;
+    margin-top: 35px;
+    background-color: #1282A6;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid #1282A6;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#ticket_booking:hover {
+    background-color: #0E6F8F;
+    border-color: #0E6F8F;
+}
+
+#message-success {
+    display: none;
+    background-color: rgba(148, 216, 251, 0.5);
+    padding: 15px;
+    border-radius: 4px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    max-width: min(360px, calc(100vw - 40px));
+    overflow-wrap: break-word;
+}
+
+.message-success-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #18364F;
+}
+
+.message-success-description {
+    color: #416B85;
+}
+
+#close-message-success {
+    color: #fff;
+    background-color: #1282A6;
+    border: 1px solid #1282A6;
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .ticket_booking_form {
+        width: 85%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .ticket_booking_title {
+        font-size: 26px;
+    }
+
+    #message-success {
+        max-width: min(320px, calc(100vw - 40px));
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .ticket_booking_form {
+        width: calc(100% - 30px);
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .ticket_booking_title {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .image-airplane {
+        width: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    #ticket_booking {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+
+    #message-success {
+        width: calc(100% - 30px);
+        max-width: 350px;
+        top: 15px;
+        right: 15px;
+        padding: 12px;
+    }
+
+    .message-success-title {
+        font-size: 17px;
+    }
+
+    .message-success-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
